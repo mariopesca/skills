@@ -125,11 +125,11 @@ curl -s -H "Authorization: Token $RTD_TOKEN" \
 
 See `skills/readthedocs-build-failure-triage/SKILL.md` for detailed instructions.
 
-## rtd-write-config
+## readthedocs-write-config
 
 Create or update Read the Docs `.readthedocs.yaml` v2 configuration files for Sphinx or MkDocs builds.
 
-**Location**: `skills/rtd-write-config/`
+**Location**: `skills/readthedocs-write-config/`
 
 **Use when**:
 
@@ -157,4 +157,4 @@ sphinx:
   configuration: docs/conf.py
 ```
 
-See `skills/rtd-write-config/SKILL.md` for detailed instructions.
+See `skills/readthedocs-write-config/SKILL.md` for detailed instructions.

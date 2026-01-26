@@ -24,7 +24,7 @@ a skill description, the agent loads the relevant `SKILL.md` and follows its ste
 └── skills/
     ├── readthedocs-search-api/
     │   └── SKILL.md
-    └── rtd-write-config/
+    └── readthedocs-write-config/
         └── SKILL.md
 ```
 

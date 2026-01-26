@@ -68,10 +68,10 @@ See `skills/readthedocs-build-failure-triage/SKILL.md` for detailed instructions
 
 Create or update Read the Docs `.readthedocs.yaml` v2 configuration files for Sphinx or MkDocs builds.
 
-- **Location**: `skills/rtd-write-config/`
+- **Location**: `skills/readthedocs-write-config/`
 - **Use when**: You need a new `.readthedocs.yaml` file or changes to build images, tools, dependency installs, formats, build jobs, conda, submodules, or search settings
 
-See `skills/rtd-write-config/SKILL.md` for detailed instructions.
+See `skills/readthedocs-write-config/SKILL.md` for detailed instructions.
 
 ## Installation
 
@@ -106,7 +106,7 @@ The Read the Docs Search API skill will activate and search the API for relevant
 └── skills/
     ├── readthedocs-search-api/
     │   └── SKILL.md
-    └── rtd-write-config/
+    └── readthedocs-write-config/
         └── SKILL.md
 ```
 
