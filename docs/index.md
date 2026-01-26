@@ -4,6 +4,8 @@ This project provides Agent Skills for interacting with Read the Docs APIs and s
 Each skill is a small, self-contained package that teaches a model how to perform a
 specialized workflow.
 
+> Warning: Most of the content in this repository is AI-generated and may contain mistakes. Review carefully before use.
+
 ## What is a skill?
 
 A skill is a folder that includes:
@@ -19,9 +21,10 @@ a skill description, the agent loads the relevant `SKILL.md` and follows its ste
 ```
 .
 ├── README.md
-├── skills.md
-└── .claude/skills/
-    └── readthedocs-search-api/
+└── skills/
+    ├── readthedocs-search-api/
+    │   └── SKILL.md
+    └── rtd-write-config/
         └── SKILL.md
 ```
 

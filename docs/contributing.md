@@ -1,8 +1,10 @@
 # Contributing
 
+> Warning: Most of the content in this repository is AI-generated and may contain mistakes. Review carefully before use.
+
 ## Add a new skill
 
-1. Create a directory under `.claude/skills/` with a descriptive name.
+1. Create a directory under `skills/` with a descriptive name.
 2. Add a `SKILL.md` file that includes YAML frontmatter and instructions.
 3. (Optional) Add supporting scripts or references.
 4. Validate the skill by running a request that matches its description.

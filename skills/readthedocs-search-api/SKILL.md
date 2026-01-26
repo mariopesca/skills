@@ -8,14 +8,20 @@ metadata:
 # Read the Docs Search API
 
 Query the public Read the Docs Search API to find documentation across millions of pages.
+This API is available on both Community and Business sites; the base URL changes by host.
 
 ## Step-by-step instructions
 
 ### 1. Make a search request
 
+Set `RTD_HOST` for your site:
+
+- Community: `https://app.readthedocs.org`
+- Business: `https://app.readthedocs.com`
+
 Query the API using:
 ```
-GET https://readthedocs.org/api/v3/search/?q={query}&page={page}
+GET ${RTD_HOST}/api/v3/search/?q={query}&page={page}
 ```
 
 Required parameters:
@@ -62,40 +68,41 @@ If there are more results, use the `next` URL to fetch the next page. Continue u
 
 ### Search for authentication documentation
 ```bash
-curl "https://readthedocs.org/api/v3/search/?q=authentication"
+curl "${RTD_HOST}/api/v3/search/?q=authentication"
 ```
 
 ### Search within a specific project
 ```bash
-curl "https://readthedocs.org/api/v3/search/?q=project:docs%20authentication"
+curl "${RTD_HOST}/api/v3/search/?q=project:docs%20authentication"
 ```
 
 ### Project-scoped quick queries
 ```bash
 # Sphinx
-curl "https://readthedocs.org/api/v3/search/?q=project:sphinx%20configuration"
-curl "https://readthedocs.org/api/v3/search/?q=project:sphinx%20autodoc"
+curl "${RTD_HOST}/api/v3/search/?q=project:sphinx%20configuration"
+curl "${RTD_HOST}/api/v3/search/?q=project:sphinx%20autodoc"
 
 # Requests
-curl "https://readthedocs.org/api/v3/search/?q=project:requests%20proxies"
-curl "https://readthedocs.org/api/v3/search/?q=project:requests%20authentication"
+curl "${RTD_HOST}/api/v3/search/?q=project:requests%20proxies"
+curl "${RTD_HOST}/api/v3/search/?q=project:requests%20authentication"
 
 # Read the Docs
-curl "https://readthedocs.org/api/v3/search/?q=project:readthedocs%20build"
-curl "https://readthedocs.org/api/v3/search/?q=project:readthedocs%20redirects"
+curl "${RTD_HOST}/api/v3/search/?q=project:readthedocs%20build"
+curl "${RTD_HOST}/api/v3/search/?q=project:readthedocs%20redirects"
 ```
 
 ### Search with pagination
 ```bash
-curl "https://readthedocs.org/api/v3/search/?q=API&page=2"
+curl "${RTD_HOST}/api/v3/search/?q=API&page=2"
 ```
 
 ### Parse results with Python
 ```python
+import os
 import requests
 
 response = requests.get(
-    "https://readthedocs.org/api/v3/search/",
+    f"{os.environ['RTD_HOST']}/api/v3/search/",
     params={"q": "REST API"}
 )
 
@@ -113,7 +120,7 @@ def search_all(query):
     page = 1
     while True:
         response = requests.get(
-            "https://readthedocs.org/api/v3/search/",
+            f"{os.environ['RTD_HOST']}/api/v3/search/",
             params={"q": query, "page": page}
         )
         data = response.json()
