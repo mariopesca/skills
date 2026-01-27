@@ -45,6 +45,27 @@ curl "${RTD_HOST}/api/v3/search/?q=project:docs%20.readthedocs.yaml"
 
 See `skills/readthedocs-search-api/SKILL.md` for detailed instructions.
 
+## readthedocs-api
+
+Full Read the Docs API v3 client reference with short and full endpoint guides.
+
+**Location**: `skills/readthedocs-api/`
+
+**Use when**:
+
+- Building or updating an API client
+- Looking up API v3 endpoints and parameters
+- Creating requests for projects, versions, builds, or related resources
+
+### Quick start
+
+```bash
+curl -H "Authorization: Token $RTD_TOKEN" \
+  "${RTD_HOST}/api/v3/projects/"
+```
+
+See `skills/readthedocs-api/SKILL.md` for detailed instructions.
+
 ## readthedocs-project-manager
 
 Manage Read the Docs projects via the RTD API: create projects, trigger builds,
