@@ -2,7 +2,7 @@
 
 A collection of Agent Skills for interacting with Read the Docs APIs and services.
 
-> Warning: Most of the content in this repository is AI-generated and may contain mistakes. Review carefully before use.
+**Warning:** These skills can modify production Read the Docs data. Use with caution and review commands that will be run carefully.
 
 ## What are Agent Skills?
 
