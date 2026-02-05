@@ -7,8 +7,25 @@ A collection of Agent Skills for interacting with Read the Docs APIs and service
 ## Documentation
 
 Official documentation lives in the Read the Docs docs:
-https://docs.readthedocs.com/platform/stable/reference/agent-skills.html
+https://docs.readthedocs.com/platform/latest/reference/agent-skills.html
 
-## License
+## Available skills
 
-These skills are available under the MIT License. See LICENSE for details.
+- **Read the Docs API**: API v3 client guidance for building requests and integrations.
+- **Read the Docs Config Writer**: Create or update ``.readthedocs.yaml`` files for Sphinx and MkDocs.
+- **Read the Docs Search API**: Query documentation across projects and versions.
+- **Read the Docs Project Manager**: Create projects, trigger builds, and sync versions.
+- **Read the Docs Redirects Manager**: List, create, update, and delete redirects.
+- **Read the Docs Build Failure Triage**: Analyze build failures using logs and config context.
+
+See the official docs for full descriptions and usage examples.
+
+## Contributing
+
+To add a new skill:
+
+1. Create a directory under `skills/` with a descriptive name.
+2. Add a `SKILL.md` file with YAML frontmatter and instructions.
+3. (Optional) Add supporting files like scripts or references.
+4. Test the skill with your agent.
+5. Submit a pull request.
