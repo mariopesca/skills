@@ -11,12 +11,12 @@ https://docs.readthedocs.com/platform/latest/reference/agent-skills.html
 
 ## Available skills
 
-- **Read the Docs API**: API v3 client guidance for building requests and integrations.
-- **Read the Docs Config Writer**: Create or update ``.readthedocs.yaml`` files for Sphinx and MkDocs.
-- **Read the Docs Search API**: Query documentation across projects and versions.
-- **Read the Docs Project Manager**: Create projects, trigger builds, and sync versions.
-- **Read the Docs Redirects Manager**: List, create, update, and delete redirects.
-- **Read the Docs Build Failure Triage**: Analyze build failures using logs and config context.
+- **[Read the Docs API](skills/readthedocs-api/SKILL.md)**: API v3 client guidance for building requests and integrations.
+- **[Read the Docs Config Writer](skills/readthedocs-write-config/SKILL.md)**: Create or update ``.readthedocs.yaml`` files for Sphinx and MkDocs.
+- **[Read the Docs Search API](skills/readthedocs-search-api/SKILL.md)**: Query documentation across projects and versions.
+- **[Read the Docs Project Manager](skills/readthedocs-project-manager/SKILL.md)**: Create projects, trigger builds, and sync versions.
+- **[Read the Docs Redirects Manager](skills/readthedocs-redirects-manager/SKILL.md)**: List, create, update, and delete redirects.
+- **[Read the Docs Build Failure Triage](skills/readthedocs-build-failure-triage/SKILL.md)**: Analyze build failures using logs and config context.
 
 See the official docs for full descriptions and usage examples.
 
@@ -29,3 +29,7 @@ To add a new skill:
 3. (Optional) Add supporting files like scripts or references.
 4. Test the skill with your agent.
 5. Submit a pull request.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
