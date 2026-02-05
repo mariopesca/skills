@@ -12,66 +12,51 @@ Skills are **model-invoked** — agents autonomously decide when to use them bas
 
 Learn more at [agentskills.io](https://agentskills.io)
 
-## Available Skills
+## Featured skills
 
-### Read the Docs Search API
+### Read the Docs API
 
-Query the Read the Docs Search API to find documentation across projects and repositories.
+Full Read the Docs API v3 client guidance. Use this skill when you are building or
+updating an API client, generating requests, or answering questions about API v3
+endpoints.
 
-- **Location**: `skills/readthedocs-search-api/`
-- **Use when**: Searching documentation, finding related docs, finding API documentation, or gathering information about projects on Read the Docs
-- **RTD_HOST**:
-  - Community: `https://app.readthedocs.org`
-  - Business: `https://app.readthedocs.com`
+- **Location**: `skills/readthedocs-api/`
+- **Use when**: You need endpoint paths, parameters, request bodies, or response fields
+- **Hosts**:
+  - Read the Docs Community: `https://app.readthedocs.org`
+  - Read the Docs Business: `https://app.readthedocs.com`
 
-#### Features
-
-- Search across millions of pages of documentation
-- No authentication required (public API)
-- Paginated results
-- Project and version information
-- HTML highlights of matched text
-- Section-level search results
-
-See `skills/readthedocs-search-api/SKILL.md` for detailed instructions.
-
-### Read the Docs Project Manager
-
-Manage Read the Docs projects via the RTD API: create projects, trigger builds, sync
-versions, and check build status.
-
-- **Location**: `skills/readthedocs-project-manager/`
-- **Use when**: Creating projects, listing repos, triggering builds, syncing versions, or checking build status
-
-See `skills/readthedocs-project-manager/SKILL.md` for detailed instructions.
-
-### Read the Docs Redirects Manager
-
-Manage Read the Docs redirects via the RTD API: list, create, update, and delete
-custom redirect rules for a project.
-
-- **Location**: `skills/readthedocs-redirects-manager/`
-- **Use when**: Listing, creating, updating, or deleting custom redirects
-
-See `skills/readthedocs-redirects-manager/SKILL.md` for detailed instructions.
-
-### Read the Docs Build Failure Triage
-
-Triage Read the Docs build failures using build logs and config context.
-
-- **Location**: `skills/readthedocs-build-failure-triage/`
-- **Use when**: A build fails, logs need analysis, or you need fix recommendations
-
-See `skills/readthedocs-build-failure-triage/SKILL.md` for detailed instructions.
+See `skills/readthedocs-api/SKILL.md` for detailed instructions.
 
 ### Read the Docs Config Writer
 
-Create or update Read the Docs `.readthedocs.yaml` v2 configuration files for Sphinx or MkDocs builds.
+Create or update Read the Docs `.readthedocs.yaml` v2 configuration files for Sphinx
+or MkDocs builds.
 
 - **Location**: `skills/readthedocs-write-config/`
-- **Use when**: You need a new `.readthedocs.yaml` file or changes to build images, tools, dependency installs, formats, build jobs, conda, submodules, or search settings
+- **Use when**: You need a new `.readthedocs.yaml` file or changes to build images,
+  tools, dependency installs, formats, build jobs, conda, submodules, or search
+  settings
 
 See `skills/readthedocs-write-config/SKILL.md` for detailed instructions.
+
+<details>
+<summary>Other skills</summary>
+
+- **Read the Docs Search API**: Query the Read the Docs Search API to find
+  documentation across projects and repositories.
+  (`skills/readthedocs-search-api/`)
+- **Read the Docs Project Manager**: Manage projects via the RTD API (create
+  projects, trigger builds, sync versions, check build status).
+  (`skills/readthedocs-project-manager/`)
+- **Read the Docs Redirects Manager**: List, create, update, and delete custom
+  redirect rules for a project.
+  (`skills/readthedocs-redirects-manager/`)
+- **Read the Docs Build Failure Triage**: Analyze build failures using build logs
+  and config context.
+  (`skills/readthedocs-build-failure-triage/`)
+
+</details>
 
 ## Installation
 
@@ -104,10 +89,11 @@ The Read the Docs Search API skill will activate and search the API for relevant
 .
 ├── README.md
 └── skills/
-    ├── readthedocs-search-api/
+    ├── readthedocs-api/
     │   └── SKILL.md
-    └── readthedocs-write-config/
-        └── SKILL.md
+    ├── readthedocs-write-config/
+    │   └── SKILL.md
+    └── ...
 ```
 
 ## Contributing
