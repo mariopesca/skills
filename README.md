@@ -66,12 +66,6 @@ Clone this repository and use the skill directories directly:
 git clone https://github.com/readthedocs/skills.git
 ```
 
-Or add it as a submodule and reference the skill directories you need:
-
-```bash
-git submodule add https://github.com/readthedocs/skills.git
-```
-
 ## Usage
 
 Skills are automatically discovered by Claude and other compatible agents. Simply ask a question that matches a skill's description, and the agent will use it autonomously.
