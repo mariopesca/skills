@@ -100,3 +100,8 @@ curl -s -X DELETE \
 - Use `page` redirects for version-agnostic moves and `exact` for version/language-specific URLs.
 - Order matters: earlier rules win when multiple redirects match.
 - Do not print or log token values in responses.
+
+## Docs
+
+- https://docs.readthedocs.com/platform/stable/user-defined-redirects.html
+- https://docs.readthedocs.com/platform/stable/api/v3.html

@@ -60,3 +60,7 @@ Write or revise `.readthedocs.yaml` files for Read the Docs v2 builds. Focus on 
 
 - Reference: `references/v2-config.md`
 - Templates: `assets/sphinx.readthedocs.yaml`, `assets/mkdocs.readthedocs.yaml`
+
+## Docs
+
+- https://docs.readthedocs.com/platform/stable/config-file/v2.html

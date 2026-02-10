@@ -116,3 +116,9 @@ curl -s -H "Authorization: Token $RTD_TOKEN" \
 - Use the community host for public RTD, and your Business host for private instances.
 - Do not print or log token values in responses.
 - If project creation fails, confirm the slug is available and the repo URL is reachable.
+
+## Docs
+
+- https://docs.readthedocs.com/platform/stable/api/v3.html
+- https://docs.readthedocs.com/platform/stable/versions.html
+- https://docs.readthedocs.com/platform/stable/builds.html

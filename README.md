@@ -17,6 +17,7 @@ https://docs.readthedocs.com/platform/latest/reference/agent-skills.html
 - **[Read the Docs Project Manager](skills/readthedocs-project-manager/SKILL.md)**: Create projects, trigger builds, and sync versions.
 - **[Read the Docs Redirects Manager](skills/readthedocs-redirects-manager/SKILL.md)**: List, create, update, and delete redirects.
 - **[Read the Docs Build Failure Triage](skills/readthedocs-build-failure-triage/SKILL.md)**: Analyze build failures using logs and config context.
+- **[Read the Docs Build Optimization](skills/readthedocs-build-optimization/SKILL.md)**: Troubleshoot and speed up slow documentation builds.
 
 See the official docs for full descriptions and usage examples.
 
