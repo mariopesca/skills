@@ -115,3 +115,9 @@ Actions:
 - Use build logs to make warnings visible and fix underlying issues.
 - Read the Docs can disable builds after too many consecutive failures.
 - Build notifications (email/webhooks) help catch failures quickly.
+
+## Docs
+
+- https://docs.readthedocs.com/platform/stable/guides/build-troubleshooting.html
+- https://docs.readthedocs.com/platform/stable/builds.html
+- https://docs.readthedocs.com/platform/stable/config-file/v2.html

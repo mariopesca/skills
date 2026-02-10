@@ -2,7 +2,7 @@
 name: readthedocs-search-api
 description: Query the Read the Docs Search API to find documentation across projects and repositories. Use when searching documentation, finding related docs, finding API documentation, or gathering information about projects on Read the Docs.
 metadata:
-  source: "https://github.com/readthedocs/readthedocs.org/pull/12601"
+  source: "https://docs.readthedocs.com/platform/stable/server-side-search/api.html"
 ---
 
 # Read the Docs Search API
@@ -144,3 +144,8 @@ def search_all(query):
 **Empty results**: If a query returns no results, try simpler keywords or browse the project directly on Read the Docs.
 
 **Project scoping recommended**: The global index is large and queries can be broad. For most use cases, include a `project:{project-slug}` filter in `q` to scope results to the relevant documentation project.
+
+## Docs
+
+- https://docs.readthedocs.com/platform/stable/server-side-search/api.html
+- https://docs.readthedocs.com/platform/stable/server-side-search/syntax.html
